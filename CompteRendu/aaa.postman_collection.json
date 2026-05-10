@@ -1,0 +1,249 @@
+{
+  "info": {
+    "_postman_id": "e73e5148-b1f0-4183-81b1-3eede647d6be",
+    "name": "aaa",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "33248380",
+    "_collection_link": "https://go.postman.co/collection/33248380-e73e5148-b1f0-4183-81b1-3eede647d6be?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "GETUSERS",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"wassim\",\r\n  \"email\": \"wassim@gmail.com\",\r\n  \"password\": \"789\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/users/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "users",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POSTUSER",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"wassim\",\r\n  \"email\": \"wassim@gmail.com\",\r\n  \"password\": \"789\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/users/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "users",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETEUSER",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/users/afee5056-10e7-4985-b574-b458737f5e3d",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "users",
+            "afee5056-10e7-4985-b574-b458737f5e3d"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GETDEVICES",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/devices/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "devices",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "ADDDEVICE",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"userId\": \"1172a06d-9f70-41e8-a4ff-4b4ef0d470e6\",\r\n  \"name\": \"Dell XPS 26\",\r\n  \"type\": \"laptop\",\r\n  \"serialNumber\": \"SN-123\",\r\n  \"status\": \"active\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/devices/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "devices",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "UPDATEDEVICE",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Dell XPS 226\",\r\n  \"type\": \"laptop\",\r\n  \"serialNumber\": \"SN-1234\",\r\n  \"status\": \"active\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/devices/fbbfd9d0-746f-4189-badb-de2fcf36dc35",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "devices",
+            "fbbfd9d0-746f-4189-badb-de2fcf36dc35"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETEDEVICE",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/devices/bbb0811c-79f9-45fb-8934-8f7a2ac01f77",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "devices",
+            "bbb0811c-79f9-45fb-8934-8f7a2ac01f77"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "UPDATEUSER",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "    {\r\n        \"name\": \"azizkaroui\",\r\n        \"email\": \"aziz@gmail.com\",\r\n        \"password\": \"123\"\r\n    }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/users/1172a06d-9f70-41e8-a4ff-4b4ef0d470e6",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "users",
+            "1172a06d-9f70-41e8-a4ff-4b4ef0d470e6"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
